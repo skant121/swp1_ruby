@@ -32,6 +32,18 @@ all_data << data
  puts "#{index + 1}. #{u[:name]}-#{u[:phoneNumber]}-#{u[:gender]}"
  end
 
+puts "Do you want to delete? (yes/no) "
+delete = gets.chomp
+ if delete == "yes"
+     puts "what number? "
+     number= gets.chomp
+     all_data.delete
+     
+    
+ else 
+     puts "OK"
+ end
+
 puts "Now, If you want to exit, input 'bye' "
 cmd = gets.chomp
 break if cmd == "bye"
